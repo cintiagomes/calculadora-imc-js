@@ -8,6 +8,7 @@ function calcularImc(){
 
     const imc = parseFloat(peso.value) / (parseFloat(altura.value) ** 2).toFixed(2);
     resultado.textContent = imc;
+    
     if(imc.value < 18.5){
         resultado.textContent = `${nome} seu IMC é ${imc}.Portanto você está baixo do peso`;
     }else if(imc.value >= 18.5 && imc.value <= 24.9){
