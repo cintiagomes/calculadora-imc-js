@@ -42,7 +42,6 @@ function exibirImc(){
         const classificacao = classificarImc(imc);
         
         resultado.textContent = `${nome} seu IMC é ${imc} e você está ${classificacao}` 
-        alert (imc)
     }else{
         resultado.textContent = "Preencha todos os campos!"
     }
